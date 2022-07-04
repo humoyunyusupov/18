@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uy ishi 18</title>
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Actor&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <div class="wrapper">
+            <div class="left-page">
+              <img class="left-page-img" src="images/opa.svg" alt="#" />
+              <h2 class="left-page-title">Let’s get you set up</h2>
+              <p class="left-page-text">
+                Itshould only take a couple of<br />minutes<br />to pair with
+                your watch
+              </p>
+              <img class="left-page-button" src="images/button.svg" alt="#" />
+            </div>
+            <div class="right-page">
+              <form
+                action="https://echo.htmlacademy.ru/courses"
+                method="post"
+                autocapitalize="off"
+              >
+                <label class="label-name label-style">
+                  <span class="text-name">Name</span>
+                  <input
+                    class="input-name input-style"
+                    type="text"
+                    name="username"
+                    aria-label="Enter your name"
+                    minlength="2"
+                    maxlength="100"
+                    placeholder="Name"
+                    autocomplete="off"
+                    required
+                  />
+                </label>
+                <div class="gender-box">
+                  <span class="text-gender">Gender</span>
+                  <label class="label-gender-male">
+                    <input
+                      class="input-gender visually-hidden"
+                      type="radio"
+                      name="usergender"
+                      aria-label="Choose your gender"
+                      required
+                      value="male"
+                    />
+
+                    <span class="gender-male-inputzone"></span>
+                    <span class="text-male">Male</span>
+                  </label>
+                  <label class="label-gender-female">
+                    <input
+                      class="input-gender visually-hidden"
+                      type="radio"
+                      name="usergender"
+                      aria-label="Choose your gender"
+                      required
+                      value="female"
+                    />
+                    <span class="gender-female-inputzone"></span>
+                    <span class="text-female">Female</span>
+                  </label>
+                </div>
+                <label class="label-date-of-birth label-style">
+                  <span class="text-name">Date of<br />Birth</span>
+                  <input
+                    class="input-birth input-style "
+                    type="date"
+                    name="user_birthday"
+                    aria-label="Enter your birthday"
+                    placeholder="01/02/1983"
+                    required
+                  />
+                </label>
+                <label class="label-email label-style">
+                  <span class="text-name">Email</span>
+                  <input
+                    class="input-email input-style"
+                    type="email"
+                    name="useremail"
+                    aria-label="Enter your email"
+                    placeholder="kendall@emailcom"
+                    required
+                  />
+                </label>
+                <label class="label-mobile label-style">
+                  <span class="text-name">Mobile</span>
+                  <input
+                    class="input-mobile input-style"
+                    type="tel"
+                    name="user_phone"
+                    aria-label="Enter your number"
+                    placeholder="+91 98765 43210"
+                    required
+                  />
+                </label>
+                <label class="label-id label-style">
+                  <span class="text-name">Customer ID</span>
+                  <input
+                    class="input-id input-style"
+                    type="text"
+                    name="user-id"
+                    aria-label="Enter your id"
+                    minlength="2"
+                    maxlength="100"
+                    placeholder="576802-ERD0348 45"
+                    required
+                  />
+                </label>
+                <div class="member-box">
+                  <span class="text-member">Membership</span>
+                  <div class="card-wrap">
+                    <label class="label-classic">
+                      <input
+                        class="input-classic visually-hidden"
+                        type="radio"
+                        name="user_card"
+                        aria-label="Choose your gender"
+                        required
+                        value="classic"
+                      />
+                      <span class="img"></span>
+                      <span class="text-classic">Classic</span>
+                    </label>
+                    <label class="label-silver">
+                      <input
+                        class="input-silver visually-hidden"
+                        type="radio"
+                        name="user_card"
+                        aria-label="Choose your gender"
+                        required
+                        value="silver"
+                      />
+                      <span class="img"></span>
+                      <span class="text-silver">Silver</span>
+                    </label>
+                    <label class="label-gold">
+                      <input
+                        class="input-gold visually-hidden"
+                        type="radio"
+                        name="user_card"
+                        aria-label="Choose your gender"
+                        required
+                        value="gold"
+                      />
+                      <span class="img"></span>
+                      <span class="text-gold">Gold</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="button-box">
+                    <button class=" button-cancel" type="reset" >CANCEL</button>
+                    <button class=" button-save" type="submit">SAVE</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

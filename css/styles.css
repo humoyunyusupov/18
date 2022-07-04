@@ -1,0 +1,293 @@
+:root {
+  --main-font-family: "Actor", "Arial", sans-serif;
+  --main-font-weight: 400;
+  --main-bg-golor: #ffd500;
+  --inputs-bg-color: #f5f8f9;
+  --main-text-color: #373d40;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--main-font-family);
+  background: #f2f2f2;
+}
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 200px;
+}
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.left-page {
+  padding-top: 80px;
+  padding-right: 64px;
+  padding-bottom: 60px;
+  padding-left: 64px;
+  width: 276px;
+  border-radius: 21.25px 0px 0px 21.25px;
+  background-color: var(--main-bg-golor);
+  align-items: center;
+  text-align: center;
+}
+.left-page-img {
+  margin-bottom: 43px;
+}
+.left-page-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  color: #383838;
+}
+.left-page-text {
+  margin: 0;
+  margin-bottom: 38px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+  color: #383838;
+}
+.right-page {
+  padding-top: 53px;
+  padding-right: 74px;
+  padding-bottom: 55px;
+  padding-left: 72px;
+  width: 404px;
+  background: #ffffff;
+  border-radius: 0px 21px 21px 0px;
+}
+.label-name {
+  display: flex;
+  align-items: center;
+}
+.text-name {
+  display: inline-block;
+  margin-right: 26px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.4089px;
+  line-height: 9px;
+  color: var(--main-text-color);
+}
+.input-style {
+  margin-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  width: 190px;
+  background: var(--inputs-bg-color);
+  outline: 0;
+  border: none;
+  border-radius: 3.64604px;
+  font-family: var(--main-font-family);
+  font-size: 8px;
+  font-weight: 400;
+  caret-color: rgba(74, 144, 226, 1);
+}
+.input-style::placeholder {
+  font-weight: 400;
+  color: rgba(177, 191, 205, 1);
+}
+.input-style:focus {
+  border: rgba(202, 215, 221, 1) solid 1px;
+}
+
+.label-style {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gender-box {
+  margin-bottom: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-align: center;
+}
+.text-gender {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.4089px;
+  line-height: 9px;
+  color: #373d40;
+}
+.label-gender-male {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gender-male-inputzone {
+  background-image: url(../images/Page\ 1.png);
+  width: 30px;
+  height: 30px;
+  margin-right: 11px;
+  background-color: #f5f8f9;
+  background-size: 13px 13px;
+  display: inline-block;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.input-gender:checked ~ .gender-male-inputzone {
+  background-color: var(--main-bg-golor);
+}
+.text-male {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 7.4089px;
+  color: #b1bfcd;
+  text-align: center;
+}
+.label-gender-female {
+  margin-right: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-gender:checked ~ .gender-female-inputzone {
+  background-color: var(--main-bg-golor);
+}
+.gender-female-inputzone {
+  background-image: url(../images/Page\ 2.png);
+  width: 30px;
+  height: 30px;
+  margin-right: 11px;
+  background-color: #f5f8f9;
+  background-size: 13px 13px;
+  display: inline-block;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text-female {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 7.4089px;
+  color: #b1bfcd;
+}
+.member-box {
+  display: flex;
+  align-items: center;
+}
+.text-member {
+  margin-right: 31px;
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 7.4089px;
+  color: #373d40;
+}
+.label-classic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-classic:checked ~ .img {
+  background-color: #cd7f32;
+}
+
+.img {
+  background-image: url(../images/Group.png);
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 11px;
+  background-color: #c7c7c7;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 12px 8px;
+  background-position: center;
+}
+.text-classic {
+  margin-right: 10px;
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 7.4089px;
+}
+.label-silver {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-silver:checked ~ .img {
+  background-color: #283d9a;
+}
+
+.text-silver {
+  margin-right: 10px;
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 7.4089px;
+}
+.label-gold {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-gold:checked ~ .img {
+  background-color: #ffdc14;
+}
+
+.text-gold {
+  margin-right: 10px;
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 7.4089px;
+}
+.card-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.button-box {
+  display: flex;
+
+  margin-top: 40px;
+  margin-left: 100px;
+}
+.button-cancel {
+  margin-right: 10px;
+  font-family: var(--main-font-family);
+  padding: 8px 25px;
+  background: #f5f8f9;
+  border-radius: 2.64604px;
+  border: none;
+  font-weight: 400;
+  font-size: 7.4089px;
+  color: #000000;
+}
+.button-save {
+  font-family: var(--main-font-family);
+  padding: 8px 25px;
+  background: #60e6c5;
+  border-radius: 2.64604px;
+  border: none;
+  font-weight: 400;
+  font-size: 7.4089px;
+  color: #ffffff;
+}
